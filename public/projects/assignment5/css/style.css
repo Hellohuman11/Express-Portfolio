@@ -1,0 +1,118 @@
+body {
+    background-color: antiquewhite;
+    
+}
+canvas {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+    border-radius: 1em;
+}
+#gameCanvas {
+  width: 900px;
+}
+#gameInfo {
+    width: 400px;
+    text-align: center;
+    background-color: rgba(255,255, 255, 0.5);
+    height: 300px;
+    float: right;
+    padding-right: 20px;
+    border-radius: 1em;
+    margin-left: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    justify-content: space-between;
+    align-items: flex-start;
+    position :center;
+}
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 8%;
+    padding: 15px 0;
+    margin-top : 5px;
+    text-align: center;
+    color: white;
+   background-color: lightcoral;
+}
+#wrapper {
+  width: auto;
+  height: auto;
+}
+
+
+#scoreDisplay{
+  font-size: 1em;
+}
+
+
+hr {
+  height: 30px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px 0 0 0;
+  
+}
+hr:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  margin-left: 5px;
+  border-style: solid;
+  border-color: lightcoral;
+  border-width: 0 0 1px 0;
+  
+}
+
+.button {
+  background-color: lightcoral;
+  color: white;
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-size: 17px;
+  padding: 18px;
+  width: 300px;
+  transition: all 0.5s;
+  margin: 3px;
+  
+}
+.button:hover {
+  background-color: #f1c40f;
+  color: black;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.3s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+    
